@@ -1,22 +1,56 @@
-//
-//  main.m
-//  Learning Rope
-//
-//  Created by Jackson Mudford on 29/10/13.
-//  Copyright (c) 2013 Jackson Mudford. All rights reserved.
-//
+// Simple program to work with fractions
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[])
-{
+// ---- @interface section ----
 
-    @autoreleasepool {
+@interface Fraction: NSObject
+
+-(void)     print;
+-(void)     setNumerator: (int) n;
+-(void)     setDenominator: (int) d;
+
+@end
+
+// ------ @implementation section ------
+
+@implementation Fraction{
+    int numerator;
+    int denominator;
+}
+-(void) print{
+    NSLog(@"%i/%i",numerator,denominator);
+}
+-(void) setNumerator: (int) n {
+    numerator = n;
+}
+-(void) setDenominator: (int) d {
+    denominator=d;
+}
+
+
+@end
+
+// ------ Program Section ---------
+
+int main (int argc, char * argv[]){
+    @autoreleasepool{
+        Fraction *myFraction;
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // Create an intance of a fraction
         
+        myFraction = [Fraction alloc];
+        myFraction = [myFraction init];
+        
+        //Set Fraction to 1 / 3
+        
+        [myFraction setNumerator:1];
+        [myFraction setDenominator:3];
+        
+        // Display fraction
+        
+        NSLog(@"The value is: ");
+        [myFraction print];
     }
     return 0;
 }
-
