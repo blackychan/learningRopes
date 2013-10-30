@@ -2,55 +2,74 @@
 
 #import <Foundation/Foundation.h>
 
-// ---- @interface section ----
+// ------ @interface Section ------
 
-@interface Fraction: NSObject
+@interface Car: NSObject{
+    int carTank;
+    int carOdometer;
+    
+}
 
--(void)     print;
--(void)     setNumerator: (int) n;
--(void)     setDenominator: (int) d;
+-(void) originalCarTankState: (int) t;
+-(void) originalCarOdemeter:(int) co;
+
+-(void) fillTank: (int) p;
+-(void) setOdometer: (int) o;
+
+-(void) printCarTank;
+-(void) printOdometer;
 
 @end
 
-// ------ @implementation section ------
+// ------ @implementation Section -------
 
-@implementation Fraction{
-    int numerator;
-    int denominator;
-}
--(void) print{
-    NSLog(@"%i/%i",numerator,denominator);
-}
--(void) setNumerator: (int) n {
-    numerator = n;
-}
--(void) setDenominator: (int) d {
-    denominator=d;
+@implementation Car
+
+-(void) originalCarTankState: (int) t{
+    carTank = t;
 }
 
+-(void) originalCarOdemeter:(int)o{
+    carOdometer = o;
+}
+
+-(void) fillTank: (int) p{
+    carTank += p;
+}
+
+-(void) setOdometer:(int) o{
+    carOdometer = o;
+}
+
+-(void) printCarTank{
+    NSLog(@"The car's tanks is %i per cent", carTank);
+}
+
+-(void) printOdometer{
+    NSLog(@"The car's Odometer is %i kilometer", carOdometer);
+}
 
 @end
 
-// ------ Program Section ---------
+// ------ Main Section --------
 
 int main (int argc, char * argv[]){
     @autoreleasepool{
-        Fraction *myFraction;
         
-        // Create an intance of a fraction
+        Car *carObject;
         
-        myFraction = [Fraction alloc];
-        myFraction = [myFraction init];
+        carObject = [Car alloc];
+        carObject = [carObject init];
         
-        //Set Fraction to 1 / 3
+        [carObject originalCarTankState:0];
+        [carObject originalCarOdemeter:520000];
         
-        [myFraction setNumerator:1];
-        [myFraction setDenominator:3];
+        [carObject printCarTank];
+        [carObject printOdometer];
         
-        // Display fraction
+        [carObject fillTank];
         
-        NSLog(@"The value is: ");
-        [myFraction print];
     }
     return 0;
+    
 }
