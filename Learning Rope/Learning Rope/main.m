@@ -41,6 +41,10 @@
     carOdometer = o;
 }
 
+-(void) driving:(int)d{
+    carOdometer += d;
+}
+
 -(void) printCarTank{
     NSLog(@"The car's tanks is %i per cent", carTank);
 }
@@ -67,7 +71,11 @@ int main (int argc, char * argv[]){
         [carObject printCarTank];
         [carObject printOdometer];
         
-        [carObject fillTank];
+        [carObject fillTank:100];
+        [carObject driving:65000];
+        
+        [carObject printCarTank];
+        [carObject printOdometer];
         
     }
     return 0;
