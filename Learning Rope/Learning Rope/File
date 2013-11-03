@@ -1,0 +1,11 @@
+Synthesized Accessor Methods
+
+@interface Section:
+@property datatype varible, varible;
+
+@implementation Section:
+@synthesize number1,number2;
+
+main Section:
+Object.varible = ?;
+Object.varible = ?;
