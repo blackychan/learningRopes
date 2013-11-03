@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A04B59A1823BC03005133C4 /* Cars.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B5991823BC03005133C4 /* Cars.m */; };
 		6A5532E7181F5F71000930D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5532E6181F5F71000930D9 /* Foundation.framework */; };
 		6A5532EA181F5F71000930D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5532E9181F5F71000930D9 /* main.m */; };
 		6A5532EE181F5F71000930D9 /* Learning_Rope.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6A5532ED181F5F71000930D9 /* Learning_Rope.1 */; };
@@ -27,8 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6A04B5981823BC03005133C4 /* Cars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cars.h; sourceTree = "<group>"; };
-		6A04B5991823BC03005133C4 /* Cars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cars.m; sourceTree = "<group>"; };
 		6A5532E3181F5F71000930D9 /* Learning Rope */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning Rope"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5532E6181F5F71000930D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A5532E9181F5F71000930D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,8 +76,6 @@
 				6A5532E9181F5F71000930D9 /* main.m */,
 				6A5532ED181F5F71000930D9 /* Learning_Rope.1 */,
 				6A5532EB181F5F71000930D9 /* Supporting Files */,
-				6A04B5981823BC03005133C4 /* Cars.h */,
-				6A04B5991823BC03005133C4 /* Cars.m */,
 			);
 			path = "Learning Rope";
 			sourceTree = "<group>";
@@ -144,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A04B59A1823BC03005133C4 /* Cars.m in Sources */,
 				6A5532EA181F5F71000930D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
