@@ -1,22 +1,29 @@
-#import <Foundation/Foundation.h>
+#import <foundation/foundation.h>
+#import "boss.h"
+#import "employee.h"
 
-@interface Lesley:NSObject{
-    int a;
+@interface Jackson: employee{
+    int x;
+    int y;
 }
 
--(void)meth;
+@property int x,y;
 
+-(void) print;
 @end
 
-@implementation Lesley
--(void)meth{
-    a = 50;
+@implementation Jackson
+
+@synthesize x,y;
+
+-(void) print{
+    NSLog(@"%i, %i, %i, %i, %i, %i", a,b,c,d,x,y);
 }
 @end
-
 
 int main(int argc, char * argv[]){
     @autoreleasepool{
+        Jackson *j = [[Jackson alloc]init];
         
     }
     return 0;
