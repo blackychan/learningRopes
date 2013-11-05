@@ -10,8 +10,8 @@
 		6A5532E7181F5F71000930D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5532E6181F5F71000930D9 /* Foundation.framework */; };
 		6A5532EA181F5F71000930D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5532E9181F5F71000930D9 /* main.m */; };
 		6A5532EE181F5F71000930D9 /* Learning_Rope.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6A5532ED181F5F71000930D9 /* Learning_Rope.1 */; };
-		6AE52483182716B300F277E6 /* boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE52482182716B300F277E6 /* boss.m */; };
-		6AF8E7FA1825E9A600B21091 /* employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8E7F91825E9A600B21091 /* employee.m */; };
+		6AEE14F31828B25D002BF0EF /* Mom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE14F21828B25D002BF0EF /* Mom.m */; };
+		6AEE14F61828B2D9002BF0EF /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE14F51828B2D9002BF0EF /* son.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,11 +33,11 @@
 		6A5532E9181F5F71000930D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A5532EC181F5F71000930D9 /* Learning Rope-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Learning Rope-Prefix.pch"; sourceTree = "<group>"; };
 		6A5532ED181F5F71000930D9 /* Learning_Rope.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Learning_Rope.1; sourceTree = "<group>"; };
-		6AE52481182716B300F277E6 /* boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boss.h; sourceTree = "<group>"; };
-		6AE52482182716B300F277E6 /* boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boss.m; sourceTree = "<group>"; };
 		6AECC7AE182659B500AA6641 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
-		6AF8E7F81825E9A600B21091 /* employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = employee.h; sourceTree = "<group>"; };
-		6AF8E7F91825E9A600B21091 /* employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = employee.m; sourceTree = "<group>"; };
+		6AEE14F11828B25D002BF0EF /* Mom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mom.h; sourceTree = "<group>"; };
+		6AEE14F21828B25D002BF0EF /* Mom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mom.m; sourceTree = "<group>"; };
+		6AEE14F41828B2D9002BF0EF /* son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
+		6AEE14F51828B2D9002BF0EF /* son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,8 @@
 		6A5532DA181F5F71000930D9 = {
 			isa = PBXGroup;
 			children = (
+				6AEE14F41828B2D9002BF0EF /* son.h */,
+				6AEE14F51828B2D9002BF0EF /* son.m */,
 				6A5532E8181F5F71000930D9 /* Learning Rope */,
 				6A5532E5181F5F71000930D9 /* Frameworks */,
 				6A5532E4181F5F71000930D9 /* Products */,
@@ -81,12 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				6A5532E9181F5F71000930D9 /* main.m */,
-				6AE52481182716B300F277E6 /* boss.h */,
-				6AE52482182716B300F277E6 /* boss.m */,
 				6A5532ED181F5F71000930D9 /* Learning_Rope.1 */,
 				6A5532EB181F5F71000930D9 /* Supporting Files */,
-				6AF8E7F81825E9A600B21091 /* employee.h */,
-				6AF8E7F91825E9A600B21091 /* employee.m */,
+				6AEE14F11828B25D002BF0EF /* Mom.h */,
+				6AEE14F21828B25D002BF0EF /* Mom.m */,
 			);
 			path = "Learning Rope";
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF8E7FA1825E9A600B21091 /* employee.m in Sources */,
-				6AE52483182716B300F277E6 /* boss.m in Sources */,
+				6AEE14F61828B2D9002BF0EF /* son.m in Sources */,
 				6A5532EA181F5F71000930D9 /* main.m in Sources */,
+				6AEE14F31828B25D002BF0EF /* Mom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
