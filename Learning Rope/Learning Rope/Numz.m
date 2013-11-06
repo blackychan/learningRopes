@@ -1,0 +1,26 @@
+//
+//  Numz.m
+//  Learning Rope
+//
+//  Created by Jackson Mudford on 6/11/13.
+//  Copyright (c) 2013 Jackson Mudford. All rights reserved.
+//
+
+#import "Numz.h"
+
+@implementation Numz
+
+-(void) setNumbers: (int)a : (int) b{
+    num1 = a;
+    num2 = b;
+}
+
+-(void) add{
+    answer = num1 + num2;
+}
+
+-(void) print{
+    NSLog(@"The answer is %i", answer);
+}
+
+@end
